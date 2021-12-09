@@ -1,0 +1,25 @@
+\version "2.18.0"
+
+\header {
+  title = "{{ .Name }}"
+}
+
+{{- range $part := .Parts }}
+drumVoice = \drummode {
+  \compressEmptyMeasures
+
+  {{- range $phrase := .Phrases }} 
+    {{ renderParallelVoices $phrase.Voices }}
+  {{- end }}
+}
+
+\score { 
+  \new DrumStaff 
+  \with {
+    instrumentName = #"{{ $part.Name }}"
+  } 
+  <<
+    \drumVoice
+  >> 
+} 
+{{- end }}
