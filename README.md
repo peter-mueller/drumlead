@@ -6,3 +6,5 @@
    - `export PATH=$PATH:/usr/local/go/bin`
 3. Change to example files directory: `cd doc`
 4. Run the tool: `drumlead test.md` or `drumlead *.md`
+   - you need to have `lilypond` (https://lilypond.org/index.de.html) on your path
+
