@@ -1,11 +1,4 @@
-package main
-
-import (
-	"github.com/peter-mueller/drumlead/parser"
-	"github.com/peter-mueller/drumlead/render"
-)
-
-const file = `# Leadsheet 
+# Leadsheet 
 ## Intro
 R1*4_"Gitarre" R1*8_"Gesang" R1*8_"Gesang"
 
@@ -32,10 +25,3 @@ bd4 bd bd bd | bd bd bd bd
 
 ## Gesang
 \repeat volta 2 { <sn toml>8 8 8 8 r2 r1_"x3" }
-
-`
-
-func main() {
-	l := parser.Parse(file)
-	render.SaveFile(l, "out.pdf")
-}
