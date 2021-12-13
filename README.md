@@ -3,7 +3,7 @@
 ## Install
 
 ```
-> go install github.com/peter-mueller/drumlead`
+> go install github.com/peter-mueller/drumlead/cmd/drumlead`
 ```
 
 > make sure you have /usr/local/go/bin in your PATH environment variable.
