@@ -1,10 +1,20 @@
 # drumlead
 
-### Usage
-1. Install: `go install github.com/peter-mueller/drumlead`
-   - Add /usr/local/go/bin to the PATH environment variable.
-   - `export PATH=$PATH:/usr/local/go/bin`
-3. Change to example files directory: `cd doc`
-4. Run the tool: `drumlead test.md` or `drumlead *.md`
-   - you need to have `lilypond` (https://lilypond.org/index.de.html) on your path
+## Install
+
+```
+> go install github.com/peter-mueller/drumlead`
+```
+
+> make sure you have /usr/local/go/bin in your PATH environment variable.
+> (`export PATH=$PATH:/usr/local/go/bin`)
+
+## Usage
+```
+drumlead doc/test.md
+// or
+drumlead doc/*.md
+```
+>  you need to have `lilypond` (https://lilypond.org/index.de.html) on your path, 
+>  because it is used for the sheet music rendering
 
