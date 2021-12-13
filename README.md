@@ -11,9 +11,10 @@
 
 ## Usage
 ```
-drumlead doc/test.md
+cd doc
+drumlead test.md
 // or
-drumlead doc/*.md
+drumlead *.md
 ```
 >  you need to have `lilypond` (https://lilypond.org/index.de.html) on your path, 
 >  because it is used for the sheet music rendering
